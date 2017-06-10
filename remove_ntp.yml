@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: removing ntp package sit tight
+    apt:
+     name: ntp 
+     state: absent

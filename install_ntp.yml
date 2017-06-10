@@ -1,0 +1,8 @@
+---
+- hosts: webservers
+  become: true
+  tasks:
+  - name: Intalling ntp server sit tight
+    apt:
+     name: ntp 
+     update_cache: yes 
