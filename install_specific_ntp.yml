@@ -2,6 +2,10 @@
 - hosts: all
   become: true
   tasks:
+  - name: removing ntp package sit tight
+    apt:
+     :name: ntp 
+     state: absent
   - name: updating ntp package version 1:4.2.8p4+dfsg-3ubuntu5.3 sit tight
     apt:
      name: ntp=1:4.2.8p4+dfsg-3ubuntu5.3 
