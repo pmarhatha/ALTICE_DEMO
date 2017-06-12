@@ -1,5 +1,5 @@
 ---
-- hosts: webservers
+- hosts: all
   become: true
   tasks:
   - name: updating ntp package version 1:4.2.8p4+dfsg-3ubuntu5.3 sit tight
