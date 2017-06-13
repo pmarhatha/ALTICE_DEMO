@@ -6,3 +6,7 @@
     apt:
      name: ntp 
      state: absent
+  - name: removing apache2 package sit tight
+    apt:
+     name: apache2 
+     state: absent
